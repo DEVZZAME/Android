@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameActivity">
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#aaf"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="오른쪽"
+        android:background="#0f0"
+        android:layout_gravity="right"
+        android:gravity="right|bottom"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="우 하단"
+        android:background="#8ac"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="1번 레이어"
+        android:gravity="top|center"
+        android:background="#e26d5c"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="2번 레이어"
+        android:gravity="center"
+        android:background="#ffe1a8"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>
+<!-- dp(device independent pixel) : 디바이스의 독립적인 픽셀값-->
+<!--안드로이드는 다양한 기종의 다양한 해상도를 고려하여 dp값을 사용하도록 권장장-->
+<!--프레임 레이아웃은 방향성이 없음. 그렇기 때문에 위치 조정을 위해 margin 속성으로 조절해줌-->
+<!--layout_gravity는 객체의 위치를 해당 값으로 옮겨주는 역할을 함-->
+<!--안드로이드에서는 두가지의 속성을 같이 사용하기 위해서 |(bar)를 이용함 예)layout_gravity="right|bottom"-->
+<!--layout_gravity는 객체 통째로 위치를 이동시키지만, gravity는 객체가 내부에 갖고 있는 값(text 같은거)을 이동시킴-->
+<!--padding과 margin 속성은 값을 하나만 주면 상/우/하/좌 4곳 모두 한번에 값이 지정됨-->
+<!--먼저 만든 레이어가 아래, 나중에 만든 레이어가 위로 배치 됨-->
